@@ -1,0 +1,44 @@
+﻿Input “( 21 + + 7 )” 
+ A) the output given is 28.0. B) the state of OPS is [ +, ]. C) the state of VALS is “[28.0 , ]”.
+
+
+
+
+
+
+ “- 32” (Note: there is a space between the minus sign and the 32) 
+A) the output given is 32.0. B) the state of OPS is [ - , ]. C) the state of VALS is [32.0 , ].
+
+
+
+
+
+
+1.4 (3 pts.) Input “( 4 * ( 5 * ( 8 + 6 )” 
+A) the Output is 14.0 B) the state of OPS is [*,*,] C) the state of VALS is [4.0, 5.0, 14.0, ]
+
+
+
+
+
+
+1.5 (3 pts.) Input “( ( 2 - 1 ) / ( ( 4 * 3 ) / ( 7 + 1 ) ) )” A the output given is 0.6666666666666666 B) the state of OPS is [ ] C) the state of VALS is [0.6666666,].
+
+
+
+
+
+
+1.6 (5 pts.) Add support for two new operations
+1. Add a new binary operation “n exp b” that computes nb.
+       (b)   Add a new binary operation “n log b” that computes logb(n).
+
+
+
+
+
+
+1.7 (4 pts.) Run your modified ImprovedEvaluate class on the Input “( 8 exp ( 216 log 6 ) )” and be sure to explain the result of the computation in your WrittenQuestionsHW1.txt file. Be sure to explain what happens when processing each of the ‘)’ closing parenthesis.
+
+
+            First reads from left to right, the first left parentheses is ignored, it then pushes 8 into the Vals stack and exp into the operator stack. The Next left parenthesis is ignored, 216 is pushed into the Vals stack, log into the operator stack. When the right parenthesis is hit, the last two values are poped from the Vals stack as well as the last operator form the operators stack. Using these, log6 216 is computed and pushed into the Vals stack. The next right parenthesis is hit and again the 2 Vals and 1 operator are poped off and computed, this time it is 8 exp 3 which computes to the value 512 which is put back into the Vals stack. This is then printed with Vals.pop.
