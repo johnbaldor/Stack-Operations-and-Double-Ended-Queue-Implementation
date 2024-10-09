@@ -1,27 +1,25 @@
-This project demonstrates skills in algorithm implementation, data structure manipulation, Java programming, and unit testing using JUnit. The tasks involve building sorting algorithms, a doubly-linked list, and a deque while optimizing for runtime efficiency and following object-oriented design principles.
+Stack Operations and Double-Ended Queue Implementation
 
-DoublyLinkedList Implementation
-Skills Used: Data Structures, Java Generics, Object-Oriented Design
+This project focused on implementing various data structures and operations using Java, including stack manipulation for arithmetic expressions, postfix evaluation, deque (double-ended queue) management, and undo/redo functionality. The tasks involved enhancing an arithmetic expression evaluator, converting postfix expressions, implementing a deque with array-based storage, and supporting multi-level undo/redo operations.
 
-Implemented a doubly-linked list with support for operations such as insertion, deletion, finding, and replacement of nodes.
-Ensured optimized time complexities, like O(1) for insertions at the head and tail.
-Used Java's object-oriented features to structure the implementation with an abstract base class and interface inheritance.
+Features
+Stack Operations: Modified an existing stack-based evaluator to support new arithmetic operations (exponentiation and logarithms) and handled edge cases with invalid expressions.
 
-More List Methods
-Skills Used: Linked-List Operations, Problem-Solving, Algorithm Design
-Developed methods to find the minimum, maximum, and middle elements in a list, create deep copies, concatenate lists, merge sorted lists, and reverse a list.
-Focused on designing algorithms with specific time complexities, ensuring efficient manipulation of linked-list data structures.
+Postfix Expression Evaluation: Converted postfix notation to infix with appropriate parentheses and evaluated the resulting arithmetic expression.
 
-JUnit Testing for DoublyLinkedList
-Skills Used: Test-Driven Development (TDD), Unit Testing, Debugging
-Wrote comprehensive JUnit test cases covering various linked list operations, including insertion, deletion, and search.
-Utilized TDD practices to ensure code reliability and handle various edge cases effectively.
+ArrayDeque Implementation: Developed an array-based double-ended queue (deque) that supports insertion and removal from both ends, as well as peek operations and clearing the queue.
 
-Linked-List Deque Implementation
-Skills Used: Data Structure Design, Queue Operations
-Implemented a deque using the doubly-linked list to support O(1) operations for adding and removing elements from both ends.
-Applied knowledge of queue behaviors in designing an efficient double-ended queue structure.
+Undo/Redo Manager: Implemented an undo/redo manager using the deque to maintain a history of operations, supporting multi-level undo and redo functionalities.
 
-JUnit Testing for Deque
-Skills Used: Automated Testing, Edge Case Handling
-Developed JUnit tests to verify the correctness of deque operations, ensuring that both edge cases and typical use cases were covered effectively.
+Skills Used
+Data Structure Implementation: Developed stack and deque structures from scratch, understanding their properties and runtimes.
+Algorithm Development: Worked with arithmetic expression parsing and manipulation using stacks.
+Object-Oriented Programming (OOP): Followed OOP principles to create modular and reusable code.
+JUnit Testing: Created comprehensive test cases to verify the correctness of stack operations, deque methods, and the undo/redo manager.
+Code Optimization: Ensured efficient implementations with appropriate runtimes for each operation (O(1) for deque insertions and deletions, O(N) for some queue adjustments).
+
+How to Run
+Stack Operations: Execute the ImprovedEvaluate class with the required input expressions for evaluation.
+Postfix Evaluation: Run PostfixToInfix with postfix expressions as input.
+Deque Operations: Use the ArrayDeque class to test deque methods such as enqueue, dequeue, inject, removeLast, etc.
+Undo/Redo Manager: Perform operations using the UndoRedoManager class to see undo/redo functionality in action.
